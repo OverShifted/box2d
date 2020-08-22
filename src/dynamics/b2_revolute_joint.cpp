@@ -257,7 +257,6 @@ bool b2RevoluteJoint::SolvePositionConstraints(const b2SolverData& data)
 	bool fixedRotation = (m_invIA + m_invIB == 0.0f);
 
 	// Solve angular limit constraint
-	bool active = false;
 	if (m_enableLimit && fixedRotation == false)
 	{
 		float angle = aB - aA - m_referenceAngle;
@@ -494,4 +493,9 @@ void b2RevoluteJoint::Draw(b2Draw* draw) const
 		draw->DrawSegment(pB, pB + rlo, c2);
 		draw->DrawSegment(pB, pB + rhi, c3);
 	}
+
+	b2Color color(0.5f, 0.8f, 0.8f);
+	draw->DrawSegment(xfA.p, pA, color);
+	draw->DrawSegment(pA, pB, color);
+	draw->DrawSegment(xfB.p, pB, color);
 }

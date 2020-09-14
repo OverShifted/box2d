@@ -5,3 +5,10 @@ settings.ini
 CMakeSettings.json
 out/
 .vs/
+
+# [OVER ENGINE]
+/Box2D.vcxproj*
+/Makefile
+
+/bin/
+/bin-int/

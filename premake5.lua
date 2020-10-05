@@ -1,4 +1,4 @@
-project "Box2D"
+project "box2d"
 	kind "StaticLib"
     language "C++"
 	cppdialect "C++11"

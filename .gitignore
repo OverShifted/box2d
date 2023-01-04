@@ -1,3 +1,8 @@
+# OverEngine
+bin/
+bin-int/
+box2d.vcxproj*
+
 build/
 imgui.ini
 settings.ini

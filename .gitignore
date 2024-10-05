@@ -5,3 +5,10 @@ settings.ini
 CMakeSettings.json
 out/
 .vs/
+
+# Added by OverShifted
+/bin/
+/bin-int/
+/box2d.vcxproj
+/box2d.vcxproj.filters
+
